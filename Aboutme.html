@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo a {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e0e0e0;
+            text-decoration: none; /* Remove underline */
+        }
+
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 16px;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin-top: 1px; /* Reduced space between text and underline */
+            right: 0;
+            background: #e0e0e0;
+            transition: width 0.3s ease;
+            -webkit-transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+            left: 0;
+            background: #e0e0e0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .article-content {
+            text-align: center;
+            margin-top: 40px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+            font-size: 20px;
+            padding: 0 40px;
+        }
+
+        .article-content img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-container {
+            margin-top: 40px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+        }
+
+        .social-links {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-links li {
+            margin: 0 10px;
+        }
+
+        .social-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-links a img {
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
+        }
+
+        .social-links a:hover {
+            color: #1e90ff;
+        } 
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Terminal News</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">All Articles</a></li>
+                <li><a href="Aboutme.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="article-content">
+            <h1>About Me</h1>
+            <p>
+            I’m a high school student at Jumeirah College in Dubai with a deep passion for coding and computer science. I discovered the world of programming from the age of 12 by starting out with simple code builders like Scratch. I’m still trying to explore the endless possibilities it offers to create, innovate, and solve problems through programming.
+            <br><br>
+            I built this tech blog from the ground up using HTML and CSS, and I’m excited to share my journey and experiences with you. As of May 2024, I’ve tried to master my craft in Python, HTML, CSS, and Dart and currently, I’m diving into JavaScript to further enhance this website and bring new features to life.
+            <br><br>
+            Beyond coding, I’m also fascinated by the broader world of technology. I enjoy exploring the latest advancements in hardware, operating systems, and software. I love staying updated and understanding how technological innovations impact our daily lives.
+            <br><br>
+            Graduating in 2025, I aim to continue expanding my knowledge and expertise in computer science, constantly pushing the boundaries of what I can create. Through this blog, I aim to inspire others who share the same passion and curiosity for technology and also help people to keep up with this ever-growing and complicated industry.
+            <br><br>
+            Thank you for visiting my blog!
+            <br><br>Armaan Thadani
+            </p>
+        </section>
+
+        <div class="contact-container">
+            <h1>Contact Me</h1>
+            <ul class="social-links">
+                <li>
+                    <a href="https://www.linkedin.com/in/armaan-thadani-5896931a1/" target="_blank">
+                        <img src="LinkedIn logo.webp" alt="LinkedIn">
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tech Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
