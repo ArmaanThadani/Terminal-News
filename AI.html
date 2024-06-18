@@ -94,8 +94,13 @@
             display: block;
             margin: 0 auto 20px; /* Center align the image and add some bottom margin */
         }
+        
+        .article-content p{
+            padding: 0 240px;
+            text-align: center;
+        }
 
-	.logo a {
+        .logo a {
             color: #e0e0e0; /* Ensure article links stay the same color */
             text-decoration: none; /* Remove the default underline */
         }
@@ -104,10 +109,6 @@
             color: #e0e0e0; /* Ensure visited article links stay the same color */
         }
         
-        .article-content p{
-            padding: 0 240px;
-            text-align: center;
-        }
         footer {
             text-align: center;
             padding: 20px;
@@ -125,13 +126,46 @@
                 transform: translateY(0);
             }
         }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .article-content p {
+                padding: 0 20px;
+                text-align: left;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            .nav-links a {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .article-content p {
+                padding: 0 10px;
+            }
+
+            .nav-links a {
+                font-size: 16px;
+            }
+        }
+
     </style>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html">Terminal News</a>
+                <a href="index.html">> Terminal News</a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
