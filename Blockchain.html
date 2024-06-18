@@ -99,21 +99,20 @@
             padding: 0 240px;
             text-align: center;
         }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            margin-top: 40px;
+        }
 
-	.logo a {
+        .logo a {
             color: #e0e0e0; /* Ensure article links stay the same color */
             text-decoration: none; /* Remove the default underline */
         }
 
         .logo a:visited {
             color: #e0e0e0; /* Ensure visited article links stay the same color */
-        }
-	    
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
-            margin-top: 40px;
         }
 
         footer p {
@@ -126,6 +125,39 @@
                 transform: translateY(0);
             }
         }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .article-content p {
+                padding: 0 20px;
+                text-align: left;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            .nav-links a {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .article-content p {
+                padding: 0 10px;
+            }
+
+            .nav-links a {
+                font-size: 16px;
+            }
+        }
+        
     </style>
 </head>
 <body>
