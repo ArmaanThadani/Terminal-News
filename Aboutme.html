@@ -132,7 +132,7 @@
         .social-links a:hover {
             color: #1e90ff;
         }
-        
+
         .logo a {
             color: #e0e0e0; /* Ensure article links stay the same color */
             text-decoration: none; /* Remove the default underline */
@@ -159,13 +159,46 @@
                 transform: translateY(0);
             }
         }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .article-content p {
+                padding: 0 20px;
+                text-align: left;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            .nav-links a {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .article-content p {
+                padding: 0 10px;
+            }
+
+            .nav-links a {
+                font-size: 16px;
+            }
+        }
+        
     </style>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html">Terminal News</a>
+                <a href="index.html">> Terminal News</a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
