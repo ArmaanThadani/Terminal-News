@@ -183,6 +183,71 @@
             }
         }
 
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+        .articles-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .search-bar input {
+            width: 70%;
+        }
+
+        main {
+            padding: 10px;
+        }
+
+        .article-card {
+            padding: 15px;
+        }
+        }
+
+        @media (max-width: 480px) {
+            .nav-links {
+                display: block;
+                text-align: center;
+            }
+
+        .nav-links li {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+
+        .articles-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .search-bar input {
+            width: 90%;
+        }
+
+        main {
+            padding: 10px;
+        }
+
+        .article-card {
+            padding: 10px;
+        }
+
+        header {
+            padding: 10px;
+        }
+
+        .logo {
+            font-size: 20px;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+        }
+        }
+
         /* Staggered animation delay */
         .article-card:nth-child(1) {
             animation-delay: 0.2s;
@@ -210,7 +275,7 @@
     <header>
         <nav>
             <div class="logo">
-            <a href="index.html">Terminal News</a>
+            <a href="index.html">> Terminal News</a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
