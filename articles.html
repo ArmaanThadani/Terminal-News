@@ -28,7 +28,7 @@
             font-weight: bold;
         }
 
-        .logo a{
+        .logo a {
             font-size: 24px;
             font-weight: bold;
             color: #e0e0e0;
@@ -104,7 +104,6 @@
             animation: fadeIn 1s forwards;
         }
 
-        /* Add these styles to your existing CSS */
         .article-card {
             transition: opacity 0.5s ease, transform 0.5s ease;
         }
@@ -135,16 +134,16 @@
             transform: scale(1.1); /* Scale the title */
         }
 
-        .article-card.show{
+        .article-card.show {
             opacity: 1;
             transform: translateY(0);
             display: block;
         }
 
-        .article-card.hide{
-            opacity:0;
+        .article-card.hide {
+            opacity: 0;
             transform: translateY(-20px);
-            display:none;
+            display: none;
         }
 
         .articles-grid a {
@@ -183,29 +182,22 @@
             }
         }
 
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
         @media (max-width: 768px) {
-        .articles-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
+            .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
 
-        .search-bar input {
-            width: 70%;
-        }
+            .search-bar input {
+                width: 70%;
+            }
 
-        main {
-            padding: 10px;
-        }
+            main {
+                padding: 10px;
+            }
 
-        .article-card {
-            padding: 15px;
-        }
+            .article-card {
+                padding: 15px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -214,38 +206,38 @@
                 text-align: center;
             }
 
-        .nav-links li {
-            margin-left: 0;
-            margin-bottom: 10px;
-        }
+            .nav-links li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
 
-        .articles-grid {
-            grid-template-columns: 1fr;
-        }
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
 
-        .search-bar input {
-            width: 90%;
-        }
+            .search-bar input {
+                width: 90%;
+            }
 
-        main {
-            padding: 10px;
-        }
+            main {
+                padding: 10px;
+            }
 
-        .article-card {
-            padding: 10px;
-        }
+            .article-card {
+                padding: 10px;
+            }
 
-        header {
-            padding: 10px;
-        }
+            header {
+                padding: 10px;
+            }
 
-        .logo {
-            font-size: 20px;
-        }
+            .logo {
+                font-size: 20px;
+            }
 
-        .nav-links a {
-            font-size: 14px;
-        }
+            .nav-links a {
+                font-size: 14px;
+            }
         }
 
         /* Staggered animation delay */
@@ -291,8 +283,10 @@
             animation-delay: 0.95s;
         }
 
+        .article-card:nth-child(12) {
+            animation-delay: 1s;
+        }
 
-        
         /* Add more delays for more articles as needed */
     </style>
 </head>
@@ -300,7 +294,7 @@
     <header>
         <nav>
             <div class="logo">
-            <a href="index.html">> Terminal News</a>
+                <a href="index.html">> Terminal News</a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -315,67 +309,18 @@
     <main>
         <section class="articles-grid">
             <div class="article-card">
-                <a href="copilot.html">
-                    <img src="Copilot.png" alt="Article Image">
-                    <h2>Are microsoft's new "AI" PCs' better than the M3 macbook air?</h2>
+                <a href="linux.html">
+                    <img src="Linux_thumbnail" alt="Article Image">
+                    <h2>Linux: The Rise of an Open-Source Powerhouse</h2>
                 </a>
-                <p>Click here to find out the winner! <br><br> 25/5/2024</p>
+                <p>Explore how Linux is becoming a dominant force in technology, driving innovation with its open-source flexibility, security, and growing popularity across industries<br><br> 29/8/2024</p>
             </div>
             <div class="article-card">
-                <a href="IDE.html">
-                    <img src="Blog-Feature-image-1200x628-1.png" alt="Article Image">
-                    <h2>Which IDE is the best fit for you?</h2>
+                <a href="nocode.html">
+                    <img src="nocode_thumbnail" alt="Article Image">
+                    <h2>Low-Code/No-Code Tools: Empowering the Next Generation of Developers</h2>
                 </a>
-                <p>Includes features of each IDE to detmerine which one is the best for you <br><br> 1/6/2024</p>
-            </div>
-            <div class="article-card">
-                <a href="AI.html">
-                    <img src="AI_thumbnail" alt="Article Image">
-                    <h2>Is AI going to take over?</h2>
-                </a>
-                <p>Discussion of the development of AI and if it can replace jobs <br><br> 8/6/2024 </p>
-            </div>
-            <div class="article-card">
-                <a href="Blockchain.html">
-                    <img src="Blockchain_thumbnail" alt="Article Image">
-                    <h2>Blockchain and Decentralized Applications: Revolutionizing the Digital World</h2>
-                </a>
-                <p>Exploring how Blockchain and Decentralized Applications work and their use cases <br><br> 15/6/2024 </p>
-            </div>
-            <div class="article-card">
-                <a href="Apple_Intelligence.html">
-                    <img src="Apple_Intelligence_thumbnail" alt="Article Image">
-                    <h2>Apple Intelligence: Revolutionizing User Experience with iOS 18</h2>
-                </a>
-                <p>Diving into the features of Apple Intelligence and how it can benefit consumers <br><br> 20/6/2024 </p>
-            </div>
-            <div class="article-card">
-                <a href="edge.html">
-                    <img src="edge_thumbnail" alt="Article Image">
-                    <h2>Edge Computing: Bringing Data Processing Closer to the Source</h2>
-                </a>
-                <p>Explanation of a concept known as Edge Computing <br><br> 28/6/2024 </p>
-            </div>
-            <div class="article-card">
-                <a href="cloud.html">
-                    <img src="cloud_thumbnail" alt="Article Image">
-                    <h2>Cloud Computing: Transforming the Digital Landscape</h2>
-                </a>
-                <p>Looking into what cloud computing is and how it works<br><br> 4/7/2024</p>
-            </div>
-            <div class="article-card">
-                <a href="AR.html">
-                    <img src="AR_thumbnail" alt="Article Image">
-                    <h2>Augmented Reality: The Next Frontier in Education and Training</h2>
-                </a>
-                <p>Brainstorming new applications of Augmented Reality (AR)<br><br> 12/7/2024</p>
-            </div>
-            <div class="article-card">
-                <a href="bio.html">
-                    <img src="Bio_thumbnail" alt="Article Image">
-                    <h2>The Growth of Biometric Authentication: Security and Privacy Concerns</h2>
-                </a>
-                <p>Discussing the rise of biometric authentication technologies and the balance between security and privacy.<br><br> 22/7/2024</p>
+                <p>Explore how low-code and no-code tools are democratizing software development, enabling anyone to build applications with little to no programming experience <br><br> 22/8/2024</p>
             </div>
             <div class="article-card">
                 <a href="img.html">
@@ -385,14 +330,68 @@
                 <p>Presenting current and potential future applications of Image Processing <br><br> 11/8/2024</p>
             </div>
             <div class="article-card">
-                <a href="nocode.html">
-                    <img src="nocode_thumbnail" alt="Article Image">
-                    <h2>Low-Code/No-Code Tools: Empowering the Next Generation of Developers</h2>
+                <a href="bio.html">
+                    <img src="Bio_thumbnail" alt="Article Image">
+                    <h2>The Growth of Biometric Authentication: Security and Privacy Concerns</h2>
                 </a>
-                <p>Explore how low-code and no-code tools are democratizing software development, enabling anyone to build applications with little to no programming experience <br><br> 22/8/2024</p>
+                <p>Discussing the rise of biometric authentication technologies and the balance between security and privacy.<br><br> 22/7/2024</p>
             </div>
-            
-            <!-- Add more articles as needed -->
+            <div class="article-card">
+                <a href="AR.html">
+                    <img src="AR_thumbnail" alt="Article Image">
+                    <h2>Augmented Reality: The Next Frontier in Education and Training</h2>
+                </a>
+                <p>Brainstorming new applications of Augmented Reality (AR)<br><br> 12/7/2024</p>
+            </div>
+            <div class="article-card">
+                <a href="cloud.html">
+                    <img src="cloud_thumbnail" alt="Article Image">
+                    <h2>Cloud Computing: Transforming the Digital Landscape</h2>
+                </a>
+                <p>Looking into what cloud computing is and how it works<br><br> 4/7/2024</p>
+            </div>
+            <div class="article-card">
+                <a href="edge.html">
+                    <img src="edge_thumbnail" alt="Article Image">
+                    <h2>Edge Computing: Bringing Data Processing Closer to the Source</h2>
+                </a>
+                <p>Explanation of a concept known as Edge Computing <br><br> 28/6/2024 </p>
+            </div>
+            <div class="article-card">
+                <a href="Apple_Intelligence.html">
+                    <img src="Apple_Intelligence_thumbnail" alt="Article Image">
+                    <h2>Apple Intelligence: Revolutionizing User Experience with iOS 18</h2>
+                </a>
+                <p>Diving into the features of Apple Intelligence and how it can benefit consumers <br><br> 20/6/2024 </p>
+            </div>
+            <div class="article-card">
+                <a href="Blockchain.html">
+                    <img src="Blockchain_thumbnail" alt="Article Image">
+                    <h2>Blockchain and Decentralized Applications: Revolutionizing the Digital World</h2>
+                </a>
+                <p>Exploring how Blockchain and Decentralized Applications work and their use cases <br><br> 15/6/2024 </p>
+            </div>
+            <div class="article-card">
+                <a href="AI.html">
+                    <img src="AI_thumbnail" alt="Article Image">
+                    <h2>Is AI going to take over?</h2>
+                </a>
+                <p>Discussion of the development of AI and if it can replace jobs <br><br> 8/6/2024 </p>
+            </div>
+            <div class="article-card">
+                <a href="IDE.html">
+                    <img src="Blog-Feature-image-1200x628-1.png" alt="Article Image">
+                    <h2>Which IDE is the best fit for you?</h2>
+                </a>
+                <p>Includes features of each IDE to determine which one is the best for you <br><br> 1/6/2024</p>
+            </div>
+            <div class="article-card">
+                <a href="copilot.html">
+                    <img src="Copilot.png" alt="Article Image">
+                    <h2>Are microsoft's new "AI" PCs' better than the M3 macbook air?</h2>
+                </a>
+                <p>Click here to find out the winner! <br><br> 25/5/2024</p>
+            </div>
         </section>
     </main>
     <footer>
